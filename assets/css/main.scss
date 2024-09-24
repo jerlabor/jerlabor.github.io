@@ -1,0 +1,98 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+search: false
+---
+
+@charset "utf-8";
+
+.flex {
+  display: flex;
+}
+
+.project {
+  &__container {
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  }
+
+  &__image {
+    background-image: url('https://www.justinchi.me/static/stockmarketchart.c853bec5.jpg');
+    min-width: 30%;
+    background-size: cover;
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 2rem 2rem 2em 4rem;
+
+    & > :not(:last-child) {
+      margin-bottom: 1.5rem;
+    }
+  }
+
+  &__name {
+    font-weight: bold;
+  }
+
+  &__description {
+    font-size: .8rem;
+    margin: 0;
+  }
+
+  &__button {
+    padding: .4rem;
+    display: inline-block;
+    border-radius: .2rem;
+    font-size: .7rem;
+
+    &--live {
+      background-color: #4A4947;
+      color: white;
+      margin-right: .5rem;
+
+      &:hover {
+        color: white;
+      }
+    }
+
+    &--github {
+      color: #4A4947;
+      box-shadow: rgba(99, 99, 99, 0.2) 0px 1px 7px 0px;
+
+      &:hover {
+        color: inherit;
+      }
+    }
+
+    &:hover {
+      transform: translateY(-.2rem);
+      cursor: hand;
+    }
+  }
+
+}
+
+
+
+.technologies {
+  display: flex;
+  & div{
+    border: 2px solid #B17457;
+    border-radius: .2rem;
+    font-size: .8rem;
+    padding: .2rem
+  }
+
+  & div:not(:last-child){
+    margin-right: .5rem;
+  }
+}
+
+
+$sans-serif: "Montserrat";
+$global-font-family : $sans-serif;
+$header-font-family : $sans-serif;
+
+@import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // skin
+@import "minimal-mistakes"; // main partials
