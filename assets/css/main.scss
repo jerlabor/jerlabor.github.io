@@ -5,17 +5,61 @@ search: false
 
 @charset "utf-8";
 
+$portfolio-primary: #ffffff;
+$portfolio-secondary: #f6f6f6;
+$portfolio-tertiary: #ececec;
+$portfolio-quaternary: #e1e1e1;
+
+// Utility Classes
 .flex {
   display: flex;
 }
 
+.portfolio {
+  background-color: $portfolio-primary;
+}
+
+.portfolio__content {
+  & > section:not(:last-child) {
+    margin-bottom: 2.5rem;
+  }
+}
+
+.projects {
+  & > *:not(:last-child) {
+    margin-bottom: 3rem;
+  }
+}
+
+
+.contact-links {
+  display: flex;
+  justify-content: center;
+
+  &__link {
+    font-size: .8rem;
+    text-decoration: none;
+  }
+
+  &__icon {
+    width: 1rem;
+  }
+
+  & > *:not(:last-child) {
+    margin-right: 3rem;
+  }
+}
+
+
 .project {
   &__container {
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    border-radius: 4px;
+    overflow: hidden;
+    background-color: $portfolio-secondary;
   }
 
   &__image {
-    background-image: url('https://www.justinchi.me/static/stockmarketchart.c853bec5.jpg');
     min-width: 30%;
     background-size: cover;
   }
@@ -45,13 +89,22 @@ search: false
     display: inline-block;
     border-radius: .2rem;
     font-size: .7rem;
+    text-decoration: none;
+
+    &:link {
+      color: inherit;
+    }
+
+    &:active {
+      color: inherit;
+    }
 
     &--live {
-      background-color: #4A4947;
+      background-color: $portfolio-secondary;
       color: white;
       margin-right: .5rem;
 
-      &:hover {
+      &:hover, &:visited {
         color: white;
       }
     }
@@ -60,7 +113,7 @@ search: false
       color: #4A4947;
       box-shadow: rgba(99, 99, 99, 0.2) 0px 1px 7px 0px;
 
-      &:hover {
+      &:hover, &:visited {
         color: inherit;
       }
     }
@@ -77,15 +130,13 @@ search: false
 
 .technologies {
   display: flex;
-  & div{
-    border: 2px solid #B17457;
-    border-radius: .2rem;
-    font-size: .8rem;
-    padding: .2rem
+  & img{
+    width: 1.5rem;
+    height: auto;
   }
 
-  & div:not(:last-child){
-    margin-right: .5rem;
+  & img:not(:last-child){
+    margin-right: .3rem;
   }
 }
 

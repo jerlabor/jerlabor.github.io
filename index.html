@@ -15,26 +15,39 @@ author_profile: true
     </section>
     <section>
         <h1 class="text-center">Projects</h1>
-        {% for project in site.projects %}
-        <div class="project">
-            <div class="project__container flex">
-                <div class="project__image"></div>
-                <div class="project__content">
-                    <div class="project__name">{{project.name}}</div>
-                    <p class="project__description">{{ project.description }}</p>
-                    <div class="technologies">
-                        {% for technology in project.technologies %}
-                        <div>{{ technology }}</div>
-                        {% endfor %}
-                    </div>
-                    <img src="assets/images/vue.svg" alt="My Happy SVG" style="max-width: 1.5rem; height: auto"/>
-                    <div>
-                        <a class="project__button project__button--live"><i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo</a>
-                        <a class="project__button project__button--github">View Source <i class="fa-brands fa-github"></i></a>
+        <div class="projects">
+            {% for project in site.projects %}
+            <div class="project">
+                <div class="project__container flex">
+                    <div class="project__image" style="background-image: url('{{project.image}}')"></div>
+                    <div class="project__content">
+                        <div class="project__name">{{project.name}}</div>
+                        <p class="project__description">{{ project.description }}</p>
+                        <div class="technologies">
+                            {% for technology in project.technologies %}
+                            <img src="assets/svg/{{technology}}.svg" alt="{{technology}}"/>
+                            {% endfor %}
+                        </div>
+                        <div>
+                            <a class="project__button project__button--live"
+                               href="{{project.live}}"
+                               target="_blank"
+                            >
+                                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                                Live Demo
+                            </a>
+                            <a class="project__button project__button--github"
+                               href="{{project.repository}}"
+                               target="_blank"
+                            >
+                                View Source
+                                <i class="fa-brands fa-github"></i>
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
+            {% endfor %}
         </div>
-        {% endfor %}
     </section>
 </div>
