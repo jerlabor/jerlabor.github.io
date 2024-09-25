@@ -1,4 +1,6 @@
 ---
+classes:
+ - portfolio
 ---
 
 <!doctype html>
@@ -14,7 +16,7 @@
 {% include_cached masthead.html %}
 
 <div class="portfolio__content mt-2">
-    <section>
+    <section id="about-me">
         <div class="flex">
             <div class="portfolio__dailyDev">
             </div>
@@ -26,7 +28,7 @@
             </div>
         </div>
     </section>
-    <section>
+    <section id="my-projects">
         <h1 class="text-center mb-4">Projects</h1>
         <div class="projects">
             {% for project in site.projects %}
@@ -63,8 +65,8 @@
             {% endfor %}
         </div>
     </section>
-    <section>
-        <h1 class="text-center">Contact Me</h1>
+    <section id="contact-me">
+        <h1 class="text-center ">Contact Me</h1>
         <div class="contact-links py-5">
             <a href="" class="contact-links__link">
                 <img src="assets/svg/email.svg" alt="" class="contact-links__icon">
