@@ -3,5 +3,7 @@ main:
     url: /about-me/
   - title: "Projects"
     url: /projects/
+  - title: "Contact Me"
+    url: /contact-me/
   - title: "Resources"
     url: /about-me/
