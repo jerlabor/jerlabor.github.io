@@ -77,6 +77,9 @@ remote_theme: "mmistakes/minimal-mistakes@4.26.2"
 minimal_mistakes_skin: "default"
 
 collections_dir: my_collection
-
 collections:
   projects:
+
+
+atom_feed:
+  hide: true
