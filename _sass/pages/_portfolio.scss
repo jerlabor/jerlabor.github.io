@@ -1,13 +1,23 @@
 .portfolio {
+  &__aboutMe-container {
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: space-between;
+  }
 
-  background-color: $portfolio-primary;
+  &__aboutMe-text {
+    width:70%;
+    flex-grow: 1;
+    flex-shrink: 2;
+    padding: 1rem;
+  }
 
   &__content {
-    width: 70%;
+    width: 90%;
     margin: 0 auto;
 
     & > section:not(:last-child) {
-      margin-bottom: 5rem;
+      margin-bottom: 1rem;
     }
   }
 
@@ -15,12 +25,16 @@
     background-image: url('https://api.daily.dev/devcards/v2/71grvNBMDAEBY7v3PeZx2.png?type=default&r=l4o');
     background-size: contain;
     background-repeat: no-repeat;
-    margin-right: 2rem;
-    min-width: 30%;
+    background-position: center;
+    min-height: 400px;
+    width: 30%;
+    min-width: 200px;
+    flex-grow: 1;
+    margin-bottom: 1rem;
   }
 
   &__portfolio__aboutMe-container {
-    min-width: 70%
+    width: 60%
   }
 
   &__bio {
@@ -31,11 +45,26 @@
   &__footer {
     font-size: .7rem;
   }
+
+  &__navigation {
+    display: flex;
+    list-style-type: none;
+    justify-content: end;
+  }
+
+  &__navigation-item {
+    text-decoration: none;
+    margin-right: 2rem;
+  }
+
+  &__navigation-link {
+
+  }
 }
 
 .projects {
   & > *:not(:last-child) {
-    margin-bottom: 3rem;
+    margin-bottom: 2rem;
   }
 }
 
@@ -44,19 +73,26 @@
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
     border-radius: 4px;
     overflow: hidden;
-    background-color: $portfolio-secondary;
+    background-color: #fff;
+    flex-wrap: wrap;
   }
 
   &__image {
-    min-width: 30%;
+    flex-basis: 35%;
+    min-height: 300px;
+    min-width: 400px;
+    height: auto;
     background-size: cover;
+    flex-grow: 1;
   }
 
   &__content {
+    flex-basis: 55%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    padding: 2rem 2rem 2em 4rem;
+    padding: 2rem;
+    flex-grow: 1;
 
     & > :not(:last-child) {
       margin-bottom: 1.5rem;
@@ -88,7 +124,7 @@
     }
 
     &--live {
-      background-color: $portfolio-secondary;
+      background-color: #161a1d;
       color: white;
       margin-right: .5rem;
 
@@ -128,18 +164,17 @@
 
 .contact-links {
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
 
   &__link {
+    text-align: center;
     font-size: .8rem;
     text-decoration: none;
+    min-width: 200px;
   }
 
   &__icon {
     width: 1rem;
-  }
-
-  & > *:not(:last-child) {
-    margin-right: 3rem;
   }
 }

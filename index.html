@@ -1,27 +1,23 @@
 ---
-classes:
- - portfolio
 ---
 
 <!doctype html>
 {% include copyright.html %}
-<html lang="{{ site.locale | replace: "_", "-" | default: "en" }}" class="no-js">
+<html lang="en" class="no-js">
 <head>
     {% include head.html %}
     {% include head/custom.html %}
 </head>
 
-<body class="layout--{{ page.layout | default: layout.layout }}{% if page.classes or layout.classes %}{{ page.classes | default: layout.classes | join: ' ' | prepend: ' ' }}{% endif %}" dir="{% if site.rtl %}rtl{% else %}ltr{% endif %}">
-{% include_cached skip-links.html %}
-{% include_cached masthead.html %}
-
-<div class="portfolio__content mt-2">
-    <section id="about-me">
-        <div class="flex">
+<body class="portfolio">
+<div class="portfolio__content">
+    {% include_cached masthead.html %}
+    <section id="about-me" class="mt-2">
+        <div class="portfolio__aboutMe-container">
             <div class="portfolio__dailyDev">
             </div>
-            <div class="portfolio__aboutMe-container">
-                <h1>About Me</h1>
+            <div class="portfolio__aboutMe-text">
+                <h1 class="text-center">About Me</h1>
                 <p class="portfolio__bio">
                     I'm a full-stack web developer with over 6 years of experience in building dynamic, scalable, and high-performance web applications. Proficient in both front-end and back-end development, he has strong expertise in PHP, Laravel, JavaScript, Vue.js, MySQL, and RESTful APIs. Dedicated to writing efficient, clean, and maintainable code, he excels in developing custom systems, integrating third-party APIs, and optimizing database performance. As a team player with a commitment to continuous learning, he thrives in Agile environments and consistently delivers high-quality solutions.
                 </p>
@@ -29,7 +25,7 @@ classes:
         </div>
     </section>
     <section id="my-projects">
-        <h1 class="text-center mb-4">Projects</h1>
+        <h1 class="text-center mb-2">Projects</h1>
         <div class="projects">
             {% for project in site.projects %}
             <div class="project">
@@ -65,9 +61,9 @@ classes:
             {% endfor %}
         </div>
     </section>
-    <section id="contact-me">
+    <section id="contact-me" class="mt-3">
         <h1 class="text-center ">Contact Me</h1>
-        <div class="contact-links py-5">
+        <div class="contact-links py-2">
             <a href="" class="contact-links__link">
                 <img src="assets/svg/email.svg" alt="" class="contact-links__icon">
                 jertrabaho@gmail.com
@@ -84,11 +80,9 @@ classes:
     </section>
 </div>
 
-
-<div class="portfolio__footer text-center mb-2">
+<div class="portfolio__footer text-center mb-1">
     Made by John Edward Labor © 2024
 </div>
-
 
 {% include scripts.html %}
 </body>
