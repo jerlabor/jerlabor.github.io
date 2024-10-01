@@ -8,7 +8,7 @@ search: false
 @import "base/utilities";
 @import "pages/portfolio";
 
-$sans-serif: "Montserrat";
+$sans-serif: "JetBrains Mono", sans-serif;
 $global-font-family : $sans-serif;
 $header-font-family : $sans-serif;
 $background-color: #f5f3f4;
