@@ -3,10 +3,9 @@
 search: false
 ---
 
-@charset "utf-8";
 
-@import "base/utilities";
-@import "pages/portfolio";
+
+
 
 $sans-serif: "JetBrains Mono", sans-serif;
 $global-font-family : $sans-serif;
@@ -15,5 +14,8 @@ $background-color: #f5f3f4;
 $text-color: #0b090a;
 $primary-color: #0b090a;
 
+@import "base/utilities";
+@import "pages/portfolio";
+@import "components/scroll-to-top";
 @import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // skin
 @import "minimal-mistakes"; // main partials

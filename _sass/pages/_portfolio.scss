@@ -115,10 +115,6 @@
     font-size: .7rem;
     text-decoration: none;
 
-    &:link {
-      color: inherit;
-    }
-
     &:active {
       color: inherit;
     }
@@ -134,8 +130,8 @@
     }
 
     &--github {
-      color: #4A4947;
       box-shadow: rgba(99, 99, 99, 0.2) 0px 1px 7px 0px;
+      color:inherit;
 
       &:hover, &:visited {
         color: inherit;
@@ -144,7 +140,6 @@
 
     &:hover {
       transform: translateY(-.2rem);
-      cursor: hand;
     }
   }
 
