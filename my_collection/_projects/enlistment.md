@@ -1,7 +1,7 @@
 ---
 name: Ateneo Enlistment Portal
-description: 'Travel smarter by saving the places you want to go. This project was an assignment given for an interview. The requirements were to build a web-app that calls the Google Places API. It must include a map with pins and a list of locations, with some interactivity between the two.'
-live: https://calc.justinchi.me/
+description: "The Online Enlistment System is a platform developed to streamline the student registration and enrollment process. The system simplifies the manual enlistment process, providing an intuitive interface for students across all grade levels. "
+live: https://enlist-gradschool.addu.edu.ph//
 repository: 
 image: '/assets/images/enlistment.png'
 technologies:

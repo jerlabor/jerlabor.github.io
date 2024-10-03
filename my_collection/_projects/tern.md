@@ -1,6 +1,6 @@
 ---
 name: Tern
-description: 'Travel smarter by saving the places you want to go. This project was an assignment given for an interview. The requirements were to build a web-app that calls the Google Places API. It must include a map with pins and a list of locations, with some interactivity between the two.'
+description: "Tern is a vehicle-sharing platform, similar to AirBnB but for cars. It allows users to list, discover, and rent vehicles for short-term use. Vehicle owners can post their cars with detailed descriptions, photos, pricing, and availability. Renters can browse vehicles by location, filter by preferences, book securely, and leave reviews. The app provides a seamless experience, featuring secure payments, insurance options, and real-time communication between owners and renters. It's designed to make car rental easy, flexible, and accessible for both personal and business needs."
 live: https://tern.appetiserdev.tech/login
 repository: 
 image: '/assets/images/tern.png'
