@@ -50,6 +50,7 @@
                                 <i class="fa-solid fa-arrow-up-right-from-square"></i>
                                 Live Demo
                             </a>
+                            {% if project.repository %}
                             <a class="project__button project__button--github"
                                href="{{project.repository}}"
                                target="_blank"
@@ -57,6 +58,7 @@
                                 View Source
                                 <i class="fa-brands fa-github"></i>
                             </a>
+                            {% endif %}
                         </div>
                     </div>
                 </div>
