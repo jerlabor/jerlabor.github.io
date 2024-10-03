@@ -29,7 +29,8 @@
     <section id="my-projects">
         <h1 class="text-center mb-2">Projects</h1>
         <div class="projects">
-            {% for project in site.projects %}
+            {% assign projects = site.projects | where: "hidden", "false" | reverse  %}
+            {% for project in projects %}
             <div class="project">
                 <div class="project__container flex">
                     <div class="project__image" style="background-image: url('{{project.image}}')"></div>

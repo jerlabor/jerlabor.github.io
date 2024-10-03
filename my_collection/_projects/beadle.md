@@ -9,4 +9,6 @@ technologies:
     - vue
     - mysql
     - laravel
+date: '2020-07-01'
+hidden: false
 ---
