@@ -9,6 +9,8 @@ technologies:
     - vue
     - mysql
     - laravel
+    - aws
+    - git
 date: '2024-03-01'
 hidden: false
 ---

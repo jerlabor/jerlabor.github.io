@@ -9,6 +9,11 @@ technologies:
     - vue
     - mysql
     - laravel
+    - typescript
+    - aws
+    - nuxt
+    - vuetify
+    - git
 date: '2023-02-01'
 hidden: false
 ---

@@ -9,6 +9,7 @@ technologies:
     - vue
     - mysql
     - laravel
+    - git
 date: '2017-10-01'
 hidden: true
 ---

@@ -6,9 +6,11 @@ repository:
 image: '/assets/images/beadle.png'
 technologies:
     - php
-    - vue
-    - mysql
     - laravel
+    - bootstrap
+    - drupal
+    - mssql
+    - git
 date: '2020-07-01'
 hidden: false
 ---

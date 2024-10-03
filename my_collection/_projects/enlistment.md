@@ -7,8 +7,10 @@ image: '/assets/images/enlistment.png'
 technologies:
     - php
     - vue
-    - mysql
     - laravel
+    - drupal
+    - mssql
+    - git
 date: '2021-03-01'
 hidden: false
 ---
