@@ -1,9 +1,9 @@
 ---
-name: Chart the Stock Market
-description: 'Travel smarter by saving the places you want to go. This project was an assignment given for an interview. The requirements were to build a web-app that calls the Google Places API. It must include a map with pins and a list of locations, with some interactivity between the two.'
-live: https://calc.justinchi.me/
+name: Move With Us
+description: 'Move With Us is a female health and fitness app that provides you with the most effective home and gym workouts and customised meal guides to help you achieve your fitness goals. Whether you’re looking to lose body fat, build muscle, sculpt and shape, take your pilates to the next level or maintain your current physique - we’ve got something for you.'
+live: https://movewithus.com/
 repository: https://github.com/vai0/material_calculator
-image: 'https://www.justinchi.me/static/stockmarketchart.c853bec5.jpg'
+image: '/assets/images/mwu.png'
 technologies:
     - php
     - vue
