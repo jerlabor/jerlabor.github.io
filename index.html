@@ -44,6 +44,7 @@ title: "John Edward Labor's Portfolio"
                             {% endfor %}
                         </div>
                         <div>
+                            {% if project.live %}
                             <a class="project__button project__button--live"
                                href="{{project.live}}"
                                target="_blank"
@@ -51,6 +52,7 @@ title: "John Edward Labor's Portfolio"
                                 <i class="fa-solid fa-arrow-up-right-from-square"></i>
                                 Live Demo
                             </a>
+                            {% endif %}
                             {% if project.repository %}
                             <a class="project__button project__button--github"
                                href="{{project.repository}}"
