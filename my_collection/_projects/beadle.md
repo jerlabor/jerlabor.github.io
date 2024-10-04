@@ -8,6 +8,7 @@ technologies:
     - php
     - laravel
     - bootstrap
+    - jquery
     - drupal
     - mssql
     - git

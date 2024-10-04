@@ -1,15 +1,18 @@
 ---
 name: CitiHardware IT Helpdesk
-description: 
+description: "An internal custom-built platform designed to streamline the management of IT support requests within an organization. It enables employees to easily submit, track, and resolve technical issues, while IT staff can efficiently manage tickets through a centralized dashboard. The system features built-in email notifications, real-time chat for immediate assistance."
 live: https://citihardware.com//
 repository: 
-image: '/assets/images/valued.png'
+image: '/assets/images/itmonitoring.png'
 technologies:
     - php
-    - vue
+    - jquery
+    - css
+    - photoshop
     - mysql
     - laravel
     - git
+    - apache
 date: '2017-10-02'
-hidden: true
+hidden: false
 ---
